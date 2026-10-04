@@ -410,3 +410,179 @@ All Unit Price values are valid.
 ```
 
 ---
+
+# 7.5 Validate Dates
+
+Select:
+
+```text
+B2:B16
+```
+
+Go to:
+
+```text
+Data
+→ Data Validation
+```
+
+Choose:
+
+```text
+Allow: Date
+```
+
+Set the appropriate date range.
+
+The provided dates are:
+
+```text
+01-09-2026
+02-09-2026
+03-09-2026
+04-09-2026
+05-09-2026
+```
+
+### Result
+
+All dates are valid.
+
+### Answer
+
+```text
+All Date values are valid.
+```
+
+---
+
+# 7.6 Validate Food Categories
+
+The categories used are:
+
+```text
+Food
+Fast Food
+Beverage
+```
+
+Select:
+
+```text
+D2:D16
+```
+
+Then:
+
+```text
+Data
+→ Data Validation
+→ Allow: List
+```
+
+Enter:
+
+```text
+Food,Fast Food,Beverage
+```
+
+Click **OK**.
+
+### Result
+
+All categories are valid.
+
+---
+
+# 7.7 Validate Customer Types
+
+Valid customer types are:
+
+```text
+Student
+Teacher
+Staff
+```
+
+Select:
+
+```text
+G2:G16
+```
+
+Then:
+
+```text
+Data
+→ Data Validation
+→ Allow: List
+```
+
+Enter:
+
+```text
+Student,Teacher,Staff
+```
+
+### Result
+
+All customer types are valid.
+
+---
+
+# 7.8 Validate Payment Methods
+
+Valid payment methods are:
+
+```text
+Cash
+bKash
+Nagad
+```
+
+Select:
+
+```text
+H2:H16
+```
+
+Then:
+
+```text
+Data
+→ Data Validation
+→ Allow: List
+```
+
+Enter:
+
+```text
+Cash,bKash,Nagad
+```
+
+### Result
+
+All payment methods are valid.
+
+---
+
+# 7.9 Overall Validation Result
+
+| Validation Check          | Result |
+| ------------------------- | -----: |
+| Missing Values            |      0 |
+| Duplicate Transaction IDs |      0 |
+| Invalid Quantity          |      0 |
+| Invalid Unit Price        |      0 |
+| Invalid Dates             |      0 |
+| Invalid Categories        |      0 |
+| Invalid Customer Types    |      0 |
+| Invalid Payment Methods   |      0 |
+
+### Final Validation Status
+
+```text
+The provided dataset passed all basic validation checks.
+```
+
+---
