@@ -831,3 +831,164 @@ Similarly, replace the food item name for other items.
 ```
 
 ---
+# 10.6 Food Item-wise Total Quantity Sold
+
+Use:
+
+```excel
+=SUMIF(C2:C16,"Chicken Biryani",E2:E16)
+```
+
+### Result
+
+| Food Item       | Total Quantity Sold |
+| --------------- | ------------------: |
+| Coffee          |                 260 |
+| Chicken Biryani |                 220 |
+| Burger          |                 165 |
+| Fried Rice      |                 105 |
+| Soft Drink      |                  85 |
+| Pizza           |                  75 |
+| Sandwich        |                  45 |
+
+### Answer
+
+The most sold food item by quantity is:
+
+```text
+Coffee
+```
+
+Total quantity sold:
+
+```text
+260
+```
+
+---
+
+# 10.7 Category-wise Revenue
+
+Use:
+
+```excel
+=SUMIF(D2:D16,"Food",I2:I16)
+```
+
+For Fast Food:
+
+```excel
+=SUMIF(D2:D16,"Fast Food",I2:I16)
+```
+
+For Beverage:
+
+```excel
+=SUMIF(D2:D16,"Beverage",I2:I16)
+```
+
+### Result
+
+| Category  | Revenue |
+| --------- | ------: |
+| Food      |  37,950 |
+| Fast Food |  33,600 |
+| Beverage  |  19,000 |
+
+### Answer
+
+The highest revenue-generating category is:
+
+```text
+Food
+```
+
+Revenue:
+
+```text
+37,950
+```
+
+---
+
+# 10.8 Category-wise Average Sales
+
+For Food:
+
+```excel
+=AVERAGEIF(D2:D16,"Food",I2:I16)
+```
+
+For Fast Food:
+
+```excel
+=AVERAGEIF(D2:D16,"Fast Food",I2:I16)
+```
+
+For Beverage:
+
+```excel
+=AVERAGEIF(D2:D16,"Beverage",I2:I16)
+```
+
+### Result
+
+| Category  | Average Sales |
+| --------- | ------------: |
+| Food      |         7,590 |
+| Fast Food |         5,600 |
+| Beverage  |         4,750 |
+
+### Answer
+
+The **Food** category has the highest average transaction sales:
+
+```text
+7,590
+```
+
+---
+
+# 10.9 Customer Type-wise Sales
+
+Use:
+
+```excel
+=SUMIF(G2:G16,"Student",I2:I16)
+```
+
+For Teacher:
+
+```excel
+=SUMIF(G2:G16,"Teacher",I2:I16)
+```
+
+For Staff:
+
+```excel
+=SUMIF(G2:G16,"Staff",I2:I16)
+```
+
+### Result
+
+| Customer Type | Total Sales |
+| ------------- | ----------: |
+| Student       |      62,250 |
+| Staff         |      18,100 |
+| Teacher       |      10,200 |
+
+### Answer
+
+The highest sales came from:
+
+```text
+Students
+```
+
+Total:
+
+```text
+62,250
+```
+
+---
