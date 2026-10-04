@@ -239,3 +239,174 @@ Click **OK**.
 This makes filtering, sorting, and analysis easier.
 
 ---
+# 7. Stage 3 — Data Validation
+
+Data validation checks whether the dataset contains incorrect, missing, duplicated, or invalid values.
+
+We need to check:
+
+* Missing data
+* Duplicate Transaction IDs
+* Quantity Sold
+* Unit Price
+* Dates
+* Food Categories
+* Customer Types
+* Payment Methods
+
+---
+
+## 7.1 Check Missing Data
+
+Select:
+
+```text
+A2:H16
+```
+
+Then:
+
+```text
+Home
+→ Find & Select
+→ Go To Special
+→ Blanks
+→ OK
+```
+
+### Result
+
+There are **no missing values** in the provided dataset.
+
+### Answer
+
+```text
+Missing Values = 0
+```
+
+---
+
+# 7.2 Check Duplicate Transaction IDs
+
+Transaction IDs should be unique.
+
+Select:
+
+```text
+A2:A16
+```
+
+Then:
+
+```text
+Home
+→ Conditional Formatting
+→ Highlight Cells Rules
+→ Duplicate Values
+```
+
+Select a formatting style and click **OK**.
+
+### Result
+
+No duplicate Transaction IDs were found.
+
+### Answer
+
+```text
+Duplicate Transaction IDs = 0
+```
+
+---
+
+# 7.3 Validate Quantity Sold
+
+Quantity Sold should be a positive number.
+
+Select:
+
+```text
+E2:E16
+```
+
+Then:
+
+```text
+Home
+→ Conditional Formatting
+→ Highlight Cells Rules
+→ Less Than
+```
+
+Enter:
+
+```text
+1
+```
+
+### Result
+
+All quantities are positive.
+
+The minimum quantity is:
+
+```text
+35
+```
+
+The maximum quantity is:
+
+```text
+100
+```
+
+### Answer
+
+```text
+All Quantity Sold values are valid.
+```
+
+---
+
+# 7.4 Validate Unit Price
+
+Unit Price should also be greater than 0.
+
+Select:
+
+```text
+F2:F16
+```
+
+Then:
+
+```text
+Home
+→ Conditional Formatting
+→ Highlight Cells Rules
+→ Less Than
+```
+
+Enter:
+
+```text
+1
+```
+
+### Result
+
+All unit prices are positive.
+
+Prices range from:
+
+```text
+40 to 180
+```
+
+### Answer
+
+```text
+All Unit Price values are valid.
+```
+
+---
