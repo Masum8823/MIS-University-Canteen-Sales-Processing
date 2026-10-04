@@ -586,3 +586,115 @@ The provided dataset passed all basic validation checks.
 ```
 
 ---
+
+# 8. Stage 4 — Data Storage
+
+The processed dataset should be stored in an Excel workbook.
+
+## Recommended File Name
+
+```text
+University_Canteen_Sales_Data_Processing.xlsx
+```
+
+## Recommended Sheet Structure
+
+### Sheet 1: Raw Data
+
+Contains the original collected data.
+
+```text
+Raw Data
+```
+
+### Sheet 2: Processed Data
+
+Contains:
+
+* Cleaned data
+* Total Sales
+* Calculated values
+
+```text
+Processed Data
+```
+
+### Sheet 3: Analysis
+
+Contains:
+
+* Total revenue
+* Average transaction
+* Item-wise analysis
+* Category-wise analysis
+* Customer-wise analysis
+* Payment-wise analysis
+* Daily sales
+
+```text
+Analysis
+```
+
+### Sheet 4: Charts
+
+Contains the final visualizations.
+
+```text
+Charts
+```
+
+---
+
+# 9. Stage 5 — Data Processing
+
+Now we calculate **Total Sales** for each transaction.
+
+## Formula
+
+```text
+Total Sales = Quantity Sold × Unit Price
+```
+
+In Excel:
+
+```text
+I2 = E2*F2
+```
+
+Press **Enter**.
+
+Then drag the formula from:
+
+```text
+I2
+```
+
+down to:
+
+```text
+I16
+```
+
+---
+
+## Calculated Total Sales
+
+| Transaction | Quantity | Unit Price | Total Sales |
+| ----------- | -------: | ---------: | ----------: |
+| T001        |       80 |        120 |       9,600 |
+| T002        |       50 |        100 |       5,000 |
+| T003        |       70 |         60 |       4,200 |
+| T004        |       35 |        180 |       6,300 |
+| T005        |       65 |        120 |       7,800 |
+| T006        |       45 |         80 |       3,600 |
+| T007        |       90 |         60 |       5,400 |
+| T008        |       55 |        110 |       6,050 |
+| T009        |       60 |        100 |       6,000 |
+| T010        |       40 |        180 |       7,200 |
+| T011        |       75 |        120 |       9,000 |
+| T012        |       85 |         40 |       3,400 |
+| T013        |       50 |        110 |       5,500 |
+| T014        |       55 |        100 |       5,500 |
+| T015        |      100 |         60 |       6,000 |
+
+---
