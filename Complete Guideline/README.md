@@ -39,3 +39,89 @@ This project demonstrates the complete **8-stage data processing workflow** usin
 16. [Final Checklist](#16-final-checklist)
 
 ---
+# 1. Project Objectives
+
+The main objectives of this project are:
+
+* Organize raw canteen sales data.
+* Validate the data for errors and inconsistencies.
+* Calculate total sales for each transaction.
+* Calculate total revenue.
+* Calculate average transaction sales.
+* Analyze sales by food item, category, customer type, payment method, and date.
+* Identify the most sold and highest revenue-generating food items.
+* Find the relationship between quantity sold and total sales.
+* Create charts for better understanding of the sales data.
+
+---
+
+# 2. 8 Stages of Data Processing
+
+The complete workflow is:
+
+```text
+Data Collection
+       ↓
+Data Entry
+       ↓
+Data Validation
+       ↓
+Data Storage
+       ↓
+Data Processing
+       ↓
+Data Analysis
+       ↓
+Data Reporting
+       ↓
+Data Visualization
+```
+
+---
+
+# 3. Raw Data
+
+The following information was collected from different sources:
+
+```text
+T001, 01-09-2026, Chicken Biryani, Food, 80, 120, Student, Cash
+T002, 01-09-2026, Burger, Fast Food, 50, 100, Student, bKash
+T003, 01-09-2026, Coffee, Beverage, 70, 60, Teacher, Cash
+T004, 02-09-2026, Pizza, Fast Food, 35, 180, Student, Nagad
+T005, 02-09-2026, Chicken Biryani, Food, 65, 120, Student, bKash
+T006, 02-09-2026, Sandwich, Fast Food, 45, 80, Staff, Cash
+T007, 03-09-2026, Coffee, Beverage, 90, 60, Student, bKash
+T008, 03-09-2026, Fried Rice, Food, 55, 110, Student, Cash
+T009, 03-09-2026, Burger, Fast Food, 60, 100, Teacher, Nagad
+T010, 04-09-2026, Pizza, Fast Food, 40, 180, Student, bKash
+T011, 04-09-2026, Chicken Biryani, Food, 75, 120, Staff, Cash
+T012, 04-09-2026, Soft Drink, Beverage, 85, 40, Student, bKash
+T013, 05-09-2026, Fried Rice, Food, 50, 110, Student, Nagad
+T014, 05-09-2026, Burger, Fast Food, 55, 100, Staff, Cash
+T015, 05-09-2026, Coffee, Beverage, 100, 60, Student, bKash
+```
+
+---
+
+# 4. Data Fields
+
+The raw data contains 8 fields.
+
+| Column | Field          | Description                   |
+| ------ | -------------- | ----------------------------- |
+| A      | Transaction ID | Unique ID of each transaction |
+| B      | Date           | Date of the transaction       |
+| C      | Food Item      | Name of the food or beverage  |
+| D      | Category       | Food category                 |
+| E      | Quantity Sold  | Number of units sold          |
+| F      | Unit Price     | Price of one unit             |
+| G      | Customer Type  | Student, Teacher, or Staff    |
+| H      | Payment Method | Cash, bKash, or Nagad         |
+
+After processing, we will add:
+
+| Column | Field       | Formula               |
+| ------ | ----------- | --------------------- |
+| I      | Total Sales | Quantity × Unit Price |
+
+---
