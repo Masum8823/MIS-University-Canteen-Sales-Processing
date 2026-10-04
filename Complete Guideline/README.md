@@ -125,3 +125,117 @@ After processing, we will add:
 | I      | Total Sales | Quantity × Unit Price |
 
 ---
+
+# 5. Stage 1 — Data Collection
+
+## Possible Data Sources
+
+At least 3 possible sources of canteen sales data are:
+
+### 1. Canteen POS / Billing System
+
+The canteen billing system can automatically store:
+
+* Transaction ID
+* Food item
+* Quantity
+* Unit price
+* Total sales
+* Payment method
+
+### 2. Daily Sales Register
+
+Canteen staff can maintain a daily sales register containing sales information.
+
+### 3. Digital Payment Records
+
+Payment records from:
+
+* bKash
+* Nagad
+* Bank/payment systems
+
+can provide information about digital transactions.
+
+### Other Possible Sources
+
+* Cash register
+* Food ordering system
+* Canteen inventory system
+* Manual sales sheets
+
+### Answer
+
+**Three suitable sources are:**
+
+1. Canteen POS/Billing System
+2. Daily Sales Register
+3. Digital Payment Records
+
+---
+
+# 6. Stage 2 — Data Entry
+
+We will use **Microsoft Excel** to organize the raw data.
+
+## Step 1: Open Excel
+
+Open Microsoft Excel and create a new workbook.
+
+## Step 2: Create Headers
+
+Enter the following headers in Row 1:
+
+```text
+A1 = Transaction ID
+B1 = Date
+C1 = Food Item
+D1 = Category
+E1 = Quantity Sold
+F1 = Unit Price
+G1 = Customer Type
+H1 = Payment Method
+I1 = Total Sales
+```
+
+## Step 3: Enter the Data
+
+Enter the 15 transactions from the raw data.
+
+The data will occupy:
+
+```text
+A2:H16
+```
+
+## Step 4: Convert into an Excel Table
+
+Select:
+
+```text
+A1:I16
+```
+
+Then:
+
+```text
+Insert → Table
+```
+
+or use:
+
+```text
+Ctrl + T
+```
+
+Select:
+
+```text
+My table has headers
+```
+
+Click **OK**.
+
+This makes filtering, sorting, and analysis easier.
+
+---
