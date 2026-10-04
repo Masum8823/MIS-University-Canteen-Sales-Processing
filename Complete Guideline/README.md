@@ -992,3 +992,171 @@ Total:
 ```
 
 ---
+
+# 10.10 Payment Method-wise Sales
+
+Use:
+
+```excel
+=SUMIF(H2:H16,"Cash",I2:I16)
+```
+
+For bKash:
+
+```excel
+=SUMIF(H2:H16,"bKash",I2:I16)
+```
+
+For Nagad:
+
+```excel
+=SUMIF(H2:H16,"Nagad",I2:I16)
+```
+
+### Result
+
+| Payment Method | Total Sales |
+| -------------- | ----------: |
+| Cash           |      37,950 |
+| bKash          |      34,800 |
+| Nagad          |      17,800 |
+
+### Answer
+
+The highest sales were generated through:
+
+```text
+Cash
+```
+
+Total:
+
+```text
+37,950
+```
+
+---
+
+# 10.11 Daily Total Sales
+
+Use:
+
+```excel
+=SUMIF(B2:B16,"01-09-2026",I2:I16)
+```
+
+Repeat for the other dates.
+
+### Result
+
+| Date       | Total Sales |
+| ---------- | ----------: |
+| 01-09-2026 |      18,800 |
+| 02-09-2026 |      17,700 |
+| 03-09-2026 |      17,450 |
+| 04-09-2026 |      19,600 |
+| 05-09-2026 |      17,000 |
+
+### Answer
+
+Highest daily sales:
+
+```text
+04-09-2026
+```
+
+Revenue:
+
+```text
+19,600
+```
+
+Lowest daily sales:
+
+```text
+05-09-2026
+```
+
+Revenue:
+
+```text
+17,000
+```
+
+---
+
+# 10.12 Most Sold Food Item
+
+First calculate total quantity for each food item.
+
+Then identify the maximum.
+
+### Formula
+
+```excel
+=MAX(<food-item-quantity-range>)
+```
+
+### Answer
+
+```text
+Most Sold Food Item = Coffee
+Total Quantity Sold = 260
+```
+
+---
+
+# 10.13 Highest Revenue-Generating Food Item
+
+Calculate total revenue for each food item.
+
+Then use:
+
+```excel
+=MAX(<food-item-revenue-range>)
+```
+
+### Answer
+
+```text
+Highest Revenue-Generating Food Item = Chicken Biryani
+Revenue = 26,400
+```
+
+---
+
+# 10.14 Relationship Between Quantity Sold and Total Sales
+
+We can use the **CORREL** function.
+
+### Formula
+
+```excel
+=CORREL(E2:E16,I2:I16)
+```
+
+### Result
+
+```text
+Correlation ≈ 0.093
+```
+
+### Interpretation
+
+The correlation is approximately **0.093**, which indicates a **very weak positive relationship** between quantity sold and total sales in this particular dataset.
+
+This happens because total sales depend on both:
+
+```text
+Quantity Sold
+```
+
+and
+
+```text
+Unit Price
+```
+
+For example, an item with a lower quantity but a high unit price can still generate high sales.
+
+---
